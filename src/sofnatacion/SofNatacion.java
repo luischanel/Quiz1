@@ -310,39 +310,34 @@ int contador=0, cod=1; //variable llevar control usuarios ingresados
         selprueba=lector.nextInt();   
         if(contador!=0){
                 for(int i=0; i<contador; i++){
+                    if(selprueba==1){
                     if(depor[i].getCompetencia1()==1 ){
                         System.out.println(depor[i].getNombre());
-                        System.out.println("Está inscrito en: ");
-                        
-                        if(depor[i].getCompetencia1()==1)
-                            System.out.println("Libre ");
-                        if(depor[i].getCompetencia2()==1)
-                            System.out.println("Mariposa ");
-                        if(depor[i].getCompetencia3()==1)
-                            System.out.println("Pecho ");
-                        if(depor[i].getCompetencia4()==1)
-                            System.out.println("Espalda ");
-                        System.out.println("Competencia a eliminar \n 1. Libre 2. Mariposa 3. Pecho 4. Espalda ");
-                        selprueba=lector.nextInt();
-                        if(selprueba==1)
-                            depor[i].setCompetencia1(0);
-                        if(selprueba==2)
-                            depor[i].setCompetencia2(0);
-                        if(selprueba==3)
-                            depor[i].setCompetencia3(0);
-                        if(selprueba==4)
-                            depor[i].setCompetencia4(0);
-
+                    }
+                    }
+                    if(selprueba==2){
+                    if(depor[i].getCompetencia2()==1 ){
+                        System.out.println(depor[i].getNombre());
+                    }
+                    }
+                    if(selprueba==4){
+                    if(depor[i].getCompetencia3()==1 ){
+                        System.out.println(depor[i].getNombre());
+                    }
+                    }
+                    if(selprueba==4){
+                    if(depor[i].getCompetencia4()==1 ){
+                        System.out.println(depor[i].getNombre());
+                    }
+                    }
                          
         
                     }
-                    else{
-                        System.out.println("No se ha encontrado el usuario"); 
-                    }
+
                 }
                 
             }
-    }
+    
     
 
 
